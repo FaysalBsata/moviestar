@@ -2,7 +2,9 @@ import { DrawerToggleButton } from '@react-navigation/drawer';
 import { Stack } from 'expo-router';
 import React from 'react';
 import { useTheme } from 'tamagui';
-
+export const unstable_settings = {
+  initialRouteName: 'index',
+};
 const Layout = () => {
   const theme = useTheme();
   return (
