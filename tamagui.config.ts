@@ -3,7 +3,7 @@ import { createInterFont } from '@tamagui/font-inter';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
 import { themes, tokens } from '@tamagui/themes';
-import { createTamagui, styled, SizableText, H1, YStack } from 'tamagui';
+import { H1, SizableText, YStack, createTamagui, styled } from 'tamagui';
 
 const animations = createAnimations({
   bouncy: {
@@ -36,7 +36,7 @@ export const Container = styled(YStack, {
 
 export const Main = styled(YStack, {
   flex: 1,
-  justifyContent: 'space-between',
+  // justifyContent: 'space-between',
   maxWidth: 960,
 });
 
