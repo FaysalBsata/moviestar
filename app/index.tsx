@@ -1,23 +1,8 @@
-import { Stack, Link } from 'expo-router';
-import { YStack } from 'tamagui';
+import { Redirect } from 'expo-router';
+import React from 'react';
 
-import { Container, Main, Title, Subtitle, Button, ButtonText } from '../tamagui.config';
+const Page = () => {
+  return <Redirect href={'/(drawer)/home/'} />;
+};
 
-export default function Page() {
-  return (
-    <Container>
-      <Main>
-        <Stack.Screen options={{ title: 'Overview' }} />
-        <YStack>
-          <Title>Hello World</Title>
-          <Subtitle>This is the first page of your app.</Subtitle>
-        </YStack>
-        <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
-          <Button>
-            <ButtonText>Show Details</ButtonText>
-          </Button>
-        </Link>
-      </Main>
-    </Container>
-  );
-}
+export default Page;
